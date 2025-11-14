@@ -1,1 +1,25 @@
-# single_page_python
+
+# Single Page Application in Python
+Copyright 2025 Stefan Meisner Larsen<br/>
+Licensed under the MIT License.
+
+## Create a virtual environment
+In the project root (or whereever you want) create a virtual environment
+<code>
+python3 -m venv .venv
+</code>
+Activate the the environment by sourcing activate script:
+<code>
+. .venv/bin/activate
+
+## Install dependencies
+Install dependencies including the optional from the "dev" section:
+
+<code>
+python -m pip install -e '.[dev]'
+</code>
+
+## Run code
+<code>
+cd src
+python single_page_python.py
