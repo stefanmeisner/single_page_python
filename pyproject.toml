@@ -12,7 +12,7 @@ description = "Single Page Web Application with Python and JavaScript"
 authors = [{name = "Stefan Meisner Larsen", email="developer@meisner-larsen.dk"}]
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = ["flask", "gunicorn"]
+dependencies = ["flask"]
 
 [project.optional-dependencies]
 dev = ["build"]

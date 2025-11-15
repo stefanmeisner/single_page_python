@@ -2,7 +2,8 @@
 # Single Page Application in Python
 Copyright 2025 Stefan Meisner Larsen<br/>
 Licensed under the MIT License.
-
+## Introduction
+This is the source for the first post on dev.to about single page web applications in python and javascript
 ## Create a virtual environment
 In the project root (or whereever you want) create a virtual environment
 <code>
@@ -21,5 +22,5 @@ python -m pip install -e '.[dev]'
 
 ## Run code
 <code>
-cd src
-python single_page_python.py
+
+python src/single_page_python.py
