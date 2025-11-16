@@ -1,7 +1,9 @@
 # Copyright 2025 Stefan Meisner Larsen
 # Licensed under the MIT License.
-from flask import Flask, render_template
+import os
+from flask import Flask, make_response, render_template, send_file
 
+NODE_MODULES = "../.."
 app = Flask(__name__)
 
 @app.route('/')

@@ -1,3 +1,7 @@
 __pycache__/
 *.egg-info/
 .venv/
+dist/
+node_modules/
+src/single_page_python/static/
+

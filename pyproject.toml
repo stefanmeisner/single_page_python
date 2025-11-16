@@ -16,3 +16,5 @@ dependencies = ["flask"]
 
 [project.optional-dependencies]
 dev = ["build"]
+
+# Make a script to start server
