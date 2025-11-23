@@ -1,24 +1,23 @@
 set -eu
 APP=single_page_python
-STATIC_DIR="src/$APP/static"
-if [ -d $STATIC_DIR ] ; then
-  rm $STATIC_DIR/*  || echo "No files found in static folder"
+NPM_DEST="src/$APP/npm"
+if [ -d $NPM_DEST ] ; then
+  rm $NPM_DEST/*  || echo "No files found in static folder"
 else
-  mkdir $STATIC_DIR
+  mkdir $NPM_DEST
 fi
 
-NPM_DEPS="\
+NPM_FILES="\
     bootstrap/dist/js/bootstrap.bundle.min.js \
     bootstrap/dist/css/bootstrap.min.css \
-    bootstrap/dist/css/bootstrap.min.map"
 
 echo "Install npm dependencies"
 npm ci
-for dep in $NPM_DEPS
+for dep in $NPM_FILES
 do
   SRC="node_modules/$dep"
-  echo "Copy $SRC to $STATIC_DIR"
-  cp  $SRC $STATIC_DIR
+  echo "Copy $SRC to $NPM_DEST"
+  cp  $SRC $NPM_DEST
 done
 
 echo "Install python dependencies"

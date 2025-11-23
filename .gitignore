@@ -3,5 +3,5 @@ __pycache__/
 .venv/
 dist/
 node_modules/
-src/single_page_python/static/
+src/single_page_python/npm
 
